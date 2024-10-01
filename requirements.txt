@@ -1,0 +1,16 @@
+# torch==2.4.0
+fastapi
+langchain 
+chromadb
+uuid
+uvicorn
+langchain_groq
+python-dotenv
+streamlit
+langchain_community 
+langchain_chroma
+# sentence-transformers==3.0.1
+# langchain-huggingface
+pypdf
+unstructured==0.14.4 # Document loading
+langchain-google-genai
