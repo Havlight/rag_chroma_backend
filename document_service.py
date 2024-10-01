@@ -5,7 +5,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from get_embedding_function import get_embedding_function
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import TextLoader, PyPDFLoader, Docx2txtLoader
+from langchain_community.document_loaders import TextLoader, PyPDFLoader, Docx2txtLoader, UnstructuredMarkdownLoader
 from langchain_chroma import Chroma
 from langchain.schema import Document
 from pydantic import BaseModel, Field
@@ -87,6 +87,8 @@ class DocumentService:
             loader = PyPDFLoader(file_path)
         elif file_extension in ['.doc', '.docx']:
             loader = Docx2txtLoader(file_path)
+        elif file_extension in ['.md']:
+            loader = UnstructuredMarkdownLoader(file_path)
         else:
             raise ValueError(f"Unsupported file type: {file_extension}")
 
