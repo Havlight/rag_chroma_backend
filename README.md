@@ -1,6 +1,6 @@
 
-rag use jina-embedding+google gemini
-
+## rag use jina-embedding+google gemini
+## branch from https://github.com/Jayanth-MKV/RAG-fastapi-chroma-langchain-docker.git
 ![ss6](./imgs/fastapi.png)
 ![ss6](./imgs/pic.png)
 
@@ -152,8 +152,6 @@ To set up and run the application using Docker, follow these steps:
 - Experimenting differnt embedding models and parameters
 - Combining traditional rag with graph db - hybrid rag improves the results
 - Agentic approach to encounter hallucinations
-
-## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an Issue to discuss improvements or fixes.
 #   r a g _ c h r o m a _ b a c k e n d 
