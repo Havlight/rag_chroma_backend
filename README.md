@@ -1,8 +1,6 @@
 
 ## rag use jina-embedding+google gemini
 ## branch from https://github.com/Jayanth-MKV/RAG-fastapi-chroma-langchain-docker.git
-![ss6](./imgs/fastapi.png)
-![ss6](./imgs/pic.png)
 
 ## Table of Contents
 
